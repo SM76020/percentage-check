@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #662525, #eb2525, #e95380);
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: linear-gradient(to right, #6f6fdd, #55d2f1);
+    color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+.container:hover {
+    transform: scale(1.0);
+}
+input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+input[type="number"]:focus, select:focus {
+    border-color: #000000;
+}
+button {
+    width: 100%;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px 25px; /* Increased padding for better visual appeal */
+    margin: 10px 0; /* Slightly larger margin */
+    border: none;
+    border-radius: 6px; /* Slightly more rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+button:hover {
+    background-color: #3ae942;
+}
+h2, h3 {
+    color: #2c3e50;
+}
+.hidden {
+    display: none;
+}

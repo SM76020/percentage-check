@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Conversion Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Percentage Conversion Calculator</h2>
+        <select id="calculationType" onchange="toggleCalculationType()">
+            <option value="percentageOfNumber">Calculate percentage of a number</option>
+            <option value="percentageValue">Calculate the percentage value</option>
+        </select>
+        <div id="percentageOfNumber">
+            <h3>Calculate percentage of a number</h3>
+            <input type="number" id="number1" placeholder="Enter the number" required>
+            <input type="number" id="percentage1" placeholder="Enter the percentage" required>
+            <button onclick="calculatePercentage()">Calculate</button>
+            <button onclick="window.location.reload()">Reset</button>
+            <p id="result1"></p>
+        </div>
+        <div id="percentageValue" class="hidden">
+            <h3>Calculate the percentage value</h3>
+            <input type="number" id="number2" placeholder="Enter the number" required>
+            <input type="number" id="resultValue" placeholder="Enter the result value" required>
+            <button onclick="calculatePercentageValue()">Calculate</button>
+            <button onclick="window.location.reload()">Reset</button>
+            <p id="result2"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
